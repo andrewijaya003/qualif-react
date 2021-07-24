@@ -1,0 +1,126 @@
+.track-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark-primary);
+}
+
+.track-card{
+    background-color: var(--bg-dark-surface);
+    color: var(--txt-primary);
+}
+
+.outer-card{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.inner-form{
+    display: flex;
+}
+
+.search-bar{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: none;
+    background-color: var(--bg-dark-surface);
+    width: 250px;
+    color: var(--txt-primary);   
+}
+
+input, button{
+    outline: none;
+}
+
+.submit-button{
+    background-color: var(--bg-dark-surface);
+    color: var(--txt-primary);
+    border-style: none;
+}
+
+.inner-body{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(77, 255, 0);
+}
+
+.button-favorite{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--bg-dark-primary);
+    background-color: rgb(77, 255, 0);
+    border-style: none;
+    border-radius: 20px;
+    width: 150px;
+    outline: none;
+    padding: 5px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.button-favorite:hover{
+    transition-timing-function: ease-in-out;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button-remove{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--bg-dark-primary);
+    background-color: red;
+    border-style: none;
+    border-radius: 20px;
+    width: 150px;
+    outline: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.button-remove:hover{
+    transition-timing-function: ease-in-out;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tag-button{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+img{
+    width: 80%;
+}
+
+.album-card{
+    width: 18rem;
+    margin: 10px;
+    height: 28rem;
+    background-color: var(--bg-dark-surface);
+    color: var(--txt-primary);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.album-card:hover{
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+    color: rgb(77, 255, 0);
+    width: 19rem;
+}
+
+.empty{
+    display: flex;
+    justify-content: center;
+}

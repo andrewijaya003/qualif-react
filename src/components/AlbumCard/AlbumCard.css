@@ -1,0 +1,21 @@
+.album-card{
+    width: 18rem;
+    margin: 10px;
+    height: 28rem;
+    background-color: var(--bg-dark-surface);
+    color: var(--txt-primary);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.album-card:hover{
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+    color: rgb(77, 255, 0);
+    width: 19rem;
+}
+
+.empty{
+    display: flex;
+    justify-content: center;
+}
