@@ -1,11 +1,17 @@
 import './AlbumCard.css'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 function AlbumCard({album, artist}) {
     const name = artist
-    
+    const history = useHistory()
+
+    const a = () => {
+        history.replace(`/album/${album.id}`)
+        window.location.reload()
+    }
+
     return(
-        <Link to={`/album/${album.id}`} className="card album-card">
+        <div onClick={a} className="card album-card">
             <img className="card-img-top" src={album.image} alt=""/>
             <div className="card-body">
                 <h3 className="card-title">
@@ -15,7 +21,7 @@ function AlbumCard({album, artist}) {
                     {name}
                 </p>
             </div>
-        </Link>
+        </div>
     )
 }
 

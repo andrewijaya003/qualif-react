@@ -96,7 +96,7 @@ function AlbumPage() {
             </div>
             {tracks?.map(track => {
                 return(
-                    <div className="outer-card">
+                    <div className="outer-card" key={track.id}>
                         <div className="card track-card">
                             <div className="card-body">
                                 <div>

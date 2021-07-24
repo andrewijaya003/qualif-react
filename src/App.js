@@ -9,7 +9,6 @@ import FavoritePage from './pages/FavoritePage.jsx/FavoritePage';
 
 function App() {
   return (
-    // <SamplePage></SamplePage>
     <Router>
       <Switch>
         <Route path="/album/:id">
